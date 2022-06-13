@@ -1,0 +1,10 @@
+.footer {
+  padding: 15px;
+  border-top: var(--border);
+  position: relative;
+}
+
+.footer__copyright {
+  text-align: center;
+  color: var(--primary-text-color);
+}
