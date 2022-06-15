@@ -17,14 +17,20 @@ body {
 /* 
   Layouts
 */
-.wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .masonry-grid {
   columns: 4;
   column-gap: 10px;
+}
+
+.layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--primary-bg-color);
+  opacity: 0.75;
+  z-index: 996;
 }
 
 /*

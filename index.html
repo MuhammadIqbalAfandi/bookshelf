@@ -48,9 +48,8 @@
         </li>
       </menu>
     </nav>
-    <div class="navbarMenu__layer"></div>
 
-    <header class="navbar wrapper">
+    <header class="navbar">
       <button class="navbar__btnHamburger btn_icon">
         <i class="icon_md ph-hamburger"></i>
       </button>
@@ -65,7 +64,7 @@
         <input class="navbar__searchInput" type="text" placeholder="Telusuri" />
       </form>
 
-      <section class="navbar__btn">
+      <section class="navbar__btnContainer">
         <a href="https://github.com/MuhammadIqbalAfandi/dicoding-submissions" target="_blank" class="btn_icon">
           <i class="icon_md ph-github-logo"></i>
         </a>
@@ -73,7 +72,7 @@
       </section>
     </header>
 
-    <main class="main wrapper">
+    <main class="main">
       <div class="bookWrite">
         <div class="bookWrite__header">
           <div class="bookWrite__headerTitle">Buat catatan...</div>
@@ -97,6 +96,8 @@
             Selesai dibaca
             <input class="bookWrite__readCheckbox" type="checkbox" />
           </label>
+
+          <button class="bookWrite__btnClose" type="button">Tutup</button>
         </form>
       </div>
 
@@ -420,9 +421,11 @@
     </main>
 
     <footer class="footer">
-      <div class="wrapper">
+      <div>
         <p class="footer__copyright">Copyright © 2022 . All Rights Reserved</p>
       </div>
     </footer>
+
+    <!-- <div class="layer"></div> -->
   </body>
 </html>

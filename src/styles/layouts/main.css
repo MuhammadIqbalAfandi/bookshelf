@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   row-gap: 30px;
-  padding: 40px 5px;
+  margin-top: 66px;
+  padding: 100px 20px 20px;
 }
 
 .bookWrite {
@@ -41,7 +42,8 @@
   border: var(--border);
   border-radius: var(--radius);
   padding: 10px;
-  display: flex;
+  /* display: flex; */
+  display: none;
   flex-direction: column;
   row-gap: 15px;
 }
@@ -80,6 +82,21 @@
   font-size: 1rem;
 }
 
+.bookWrite__btnClose {
+  padding: 10px;
+  font-size: 1rem;
+  color: var(--primary-text-color);
+  background-color: var(--second-bg-color);
+  transition: var(--transition);
+  border-radius: var(--radius);
+}
+
+.bookWrite__btnClose:hover {
+  transition: var(--transition);
+  background-color: var(--accent-bg-color);
+  cursor: pointer;
+}
+
 .book__title {
   font-size: 1rem;
   margin-bottom: 20px;
@@ -97,8 +114,9 @@
 }
 
 .book__container:hover {
-  background-color: var(--second-bg-color);
+  background-color: var(--accent-bg-color);
   transition: var(--transition);
+  cursor: pointer;
 }
 
 .book__btn {
@@ -134,8 +152,9 @@
   font-size: 1.2rem;
 }
 
-@media (max-width: 768px) {
-  .main {
-    padding-top: 20px;
+@media (min-width: 769px) {
+  .bookWrite__body {
+    position: relative;
+    z-index: 997;
   }
 }
