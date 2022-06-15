@@ -41,12 +41,12 @@
 @media (min-width: 769px) {
   .navbarMenu {
     position: fixed;
-    top: 76px;
+    top: 66px;
     left: 0;
     right: 0;
     z-index: 995;
     background-color: var(--primary-bg-color);
-    padding: 10px 0;
+    padding: 20px 0;
   }
 
   .navbarMenu__container {
@@ -77,7 +77,7 @@
 
   .navbar {
     column-gap: 15px;
-    padding: 20px 20px 0px;
+    padding: 10px 20px 0px;
   }
 
   .navbar__header {
@@ -145,7 +145,7 @@
   .navbar {
     background-color: var(--second-bg-color);
     border-radius: 50px;
-    margin: 20px;
+    margin: 10px 20px;
   }
 
   .navbar__search {
