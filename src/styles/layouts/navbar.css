@@ -52,7 +52,7 @@
   .navbarMenu__container {
     display: flex;
     justify-content: center;
-    column-gap: 10px;
+    column-gap: 15px;
   }
 
   .navbarMenu__headerTitle {
@@ -60,6 +60,9 @@
   }
 
   .navbarMenu__btn {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
     font-size: 0.875rem;
     color: var(--primary-text-color);
   }
