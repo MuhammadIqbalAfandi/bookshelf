@@ -1,0 +1,6 @@
+@import 'variable.css';
+@import 'global.css';
+@import './layouts/navbar.css';
+@import './layouts/book.css';
+@import './layouts/footer.css';
+@import './layouts/dialog.css';

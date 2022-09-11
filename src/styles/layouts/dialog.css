@@ -1,0 +1,47 @@
+.dialog__layer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 997;
+  background-color: rgba(10, 10, 10, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog {
+  position: fixed;
+  z-index: 997;
+  width: 430px;
+  padding: 15px;
+  border-radius: var(--radius);
+  background-color: var(--dialog-bg-color);
+}
+
+.dialog__btnContainer {
+  display: flex;
+  justify-content: end;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.dialog__btn {
+  background-color: transparent;
+  padding: 5px 15px;
+}
+
+.dialog__btn:hover {
+  background-color: var(--accent-bg-color);
+  cursor: pointer;
+  border-radius: var(--radius);
+}
+
+.dialog__btnCancel {
+  color: var(--primary-text-color);
+}
+
+.dialog__btnOk {
+  color: var(--second-text-color);
+}

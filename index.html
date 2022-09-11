@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- JS -->
+    <script defer type="module" src="./src/scripts/index.js"></script>
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/phosphor-icons"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./src/images/favicon.ico" type="image/x-icon" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/styles/index.css" />
+
+    <title>BookShelf</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <button class="navbar__btnHamburger btn_icon">
+        <i class="icon_md ph-hamburger"></i>
+      </button>
+
+      <figure class="navbar__header">
+        <img
+          class="navbar__headerLogo"
+          src="/src/images/web-logo.png"
+          alt="Web Logo"
+        />
+        <figcaption class="navbar__headerTitle">BookShelf</figcaption>
+      </figure>
+
+      <form class="navbar__search">
+        <button class="navbar__btnSearch">
+          <i class="icon_sm ph-magnifying-glass"></i>
+        </button>
+        <input class="navbar__searchInput" type="text" placeholder="Telusuri" />
+      </form>
+
+      <section class="navbar__btnContainer">
+        <a
+          href="https://github.com/MuhammadIqbalAfandi/bookshelf"
+          target="_blank"
+          class="btn_icon"
+        >
+          <i class="icon_md ph-github-logo"></i>
+        </a>
+
+        <button class="navbar__toggleTheme btn_icon">
+          <i class="icon_md ph-moon"></i>
+        </button>
+      </section>
+    </header>
+
+    <nav class="navbarMenu">
+      <header>
+        <h1 class="navbarMenu__headerTitle">BookShelf</h1>
+      </header>
+
+      <menu class="navbarMenu__container">
+        <li>
+          <a data-menu="home" class="navbarMenu__btn" href="#">
+            <i class="ph-house"></i>
+            Home
+          </a>
+        </li>
+        <li>
+          <a data-menu="book-read" class="navbarMenu__btn" href="#">
+            <i class="ph-book"></i>
+            Selesai dibaca
+          </a>
+        </li>
+        <li>
+          <a data-menu="book-unread" class="navbarMenu__btn" href="#">
+            <i class="ph-book-open"></i>
+            Belum selesai dibaca
+          </a>
+        </li>
+      </menu>
+    </nav>
+
+    <main class="main">
+      <div class="bookWrite">
+        <div class="bookWrite__header">
+          <div class="bookWrite__headerTitle">Buat catatan...</div>
+          <div
+            class="bookWrite__headerInput"
+            contenteditable="true"
+            role="textbox"
+          ></div>
+        </div>
+
+        <form class="bookWrite__body hide">
+          <input type="hidden" class="bookWrite__id" />
+
+          <input
+            class="bookWrite__title bookWrite__bodyInput bookWrite_placeholder_bold bookWrite_marginLeft"
+            type="text"
+            placeholder="Judul"
+          />
+
+          <input
+            class="bookWrite__author bookWrite__bodyInput"
+            type="text"
+            placeholder="Penulis"
+          />
+
+          <input
+            class="bookWrite__year bookWrite__bodyInput"
+            type="text"
+            placeholder="Tahun"
+          />
+
+          <label class="bookWrite__read">
+            Selesai dibaca
+            <input class="bookWrite__readCheckbox" type="checkbox" />
+          </label>
+
+          <button class="bookWrite__btnClose" type="button">Tutup</button>
+        </form>
+      </div>
+
+      <section class="bookRead">
+        <h2 class="book__title book__titleRead">
+          <i class="ph-book-open"></i>
+          Selesai dibaca
+        </h2>
+
+        <div class="masonry-grid"></div>
+      </section>
+
+      <section class="bookUnread">
+        <h2 class="book__title book__titleUnread">
+          <i class="ph-book"></i>
+          Belum selesai dibaca
+        </h2>
+
+        <div class="masonry-grid"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <p class="footer__copyright">Dibuat dengan sepenuh hati &#128140;</p>
+      </div>
+    </footer>
+
+    <div class="bookWrite__bodyLayer hide"></div>
+
+    <div class="navbarMenu__layer hide"></div>
+  </body>
+</html>
